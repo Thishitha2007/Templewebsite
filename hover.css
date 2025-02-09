@@ -1,0 +1,14 @@
+a:link{
+    background-color: indigo;
+}
+a:visited{
+    background-color: chartreuse;
+}
+a:hover{
+    background-color: darkmagenta;
+    border: 2px greenyellow;
+    background-image: url(img.png);
+}
+a:active{
+    background-color: darksalmon;
+}

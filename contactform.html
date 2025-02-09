@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* General body styling */
+        body {
+            background-image: url('temple.banner.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        table {
+            width: 100%;
+            margin: 0;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: red;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            display: block;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Flexbox for responsive navbar */
+        .navbar a {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        /* Form styling */
+        .contact-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-group button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form-group button:hover {
+            background-color: #cc0000;
+        }
+
+        /* Media Queries for mobile responsiveness */
+        @media (max-width: 768px) {
+            .contact-form {
+                margin: 20px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="8" style="text-align:center;">
+                <img src="temple.logo.png" height="100px" alt="Temple Logo">
+            </td>
+        </tr>
+        <tr class="navbar">
+            <td><a href="website.html">HOME</a></td>
+            <td><a href="about.html">ABOUT</a></td>
+            <td><a href="north.html">NORTH INDIA</a></td>
+            <td><a href="south.html">SOUTH INDIA</a></td>
+            <td><a href="east.html">EAST INDIA</a></td>
+            <td><a href="west.html">WEST INDIA</a></td>
+            <td><a href="contact.html">CONTACT</a></td>
+        </tr>
+    </table>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

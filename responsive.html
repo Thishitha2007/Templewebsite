@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        /* Body styling */
+        body {
+            background-image: url('temple.banner.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        table {
+            width: 100%;
+            margin: 0;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: red;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            display: block;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Flexbox for responsive layout */
+        .navbar a {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        /* For smaller screens (like tablets or phones) */
+        @media (max-width: 768px) {
+            .navbar a {
+                padding: 10px;
+                min-width: 100px;
+            }
+        }
+
+        /* For mobile screens */
+        @media (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                text-align: left;
+            }
+
+            .navbar a {
+                padding: 15px;
+                text-align: left;
+                width: 100%;
+            }
+
+            td {
+                padding: 5px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="8" style="text-align:center;">
+                <img src="temple.logo.png" height="100px" alt="Temple Logo">
+            </td>
+        </tr>
+        <tr class="navbar">
+            <td><a href="website.html">HOME</a></td>
+            <td><a href="about.html">ABOUT</a></td>
+            <td><a href="north.html">NORTH INDIA</a></td>
+            <td><a href="south.html">SOUTH INDIA</a></td>
+            <td><a href="east.html">EAST INDIA</a></td>
+            <td><a href="west.html">WEST INDIA</a></td>
+            <td><a href="contact.html">CONTACT</a></td>
+        </tr>
+    </table>
+
+</body>
+</html>
